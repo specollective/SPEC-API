@@ -1,13 +1,8 @@
-const { Sequelize } = require('sequelize');
-
-const sequelize = new Sequelize('spec-db', 'jtorreggiani', 'password', {
-  host: 'localhost',
-  dialect: 'postgres',
-});
+const db = require('./models');
 
 async function testSetup() {
 	try {
-		await sequelize.authenticate();
+		await db.sequelize.authenticate();
 		console.log('Connection has been established successfully.');
 	} catch (error) {
 		console.error('Unable to connect to the database:', error);

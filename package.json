@@ -1,5 +1,5 @@
 {
-  "name": "sample-expressjs",
+  "name": "spec-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/digitalocean/sample-expressjs"
+    "url": "github.com/specollective/spec-api"
   },
   "author": "",
   "license": "MIT",

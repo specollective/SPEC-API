@@ -1,8 +1,8 @@
-name: sample-expressjs
+name: spec-api
 services:
 - environment_slug: node-js
   github:
     branch: main
     deploy_on_push: true
-    repo: digitalocean/sample-expressjs
-  name: sample-expressjs
+    repo: specollective/spec-api
+  name: spec-api

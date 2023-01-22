@@ -1,7 +1,7 @@
 const { application } = require('express')
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5555
 const database = require('./database');
 const startupMessage = 'SPEC API starting up...'
 

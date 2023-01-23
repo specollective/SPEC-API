@@ -1,4 +1,4 @@
-const { Project } = require('../database/models')
+const { Project } = require('../models')
 
 module.exports = {
   index: async (req, res, next) => {

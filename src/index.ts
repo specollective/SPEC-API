@@ -1,9 +1,9 @@
-const { application } = require('express')
-const express = require('express')
+import express from 'express'
+import database from './database'
+
+const startupMessage = 'SPEC API starting up...'
 const app = express()
 const port = process.env.PORT || 5555
-const database = require('./database');
-const startupMessage = 'SPEC API starting up...'
 
 console.log('ENV', process.env.NODE_ENV)
 console.log(startupMessage)
@@ -17,4 +17,6 @@ app.get('/health', (req: any, res: any) => res.json({ status: 'UP' }))
 
 database.testSetup()
 
-app.listen(port, () => console.log(`spec-api listening on port ${port}!`))
+app.listen(port, () => {
+  console.log(`spec-api listening on port ${port}!`)
+})

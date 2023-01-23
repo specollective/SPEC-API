@@ -1,6 +1,5 @@
 const router = require('express').Router()
 const projectsController = require('../controllers/projects-controller')
-const { Project } = require('../database/models')
 
 router.get('/', projectsController.index)
 router.post('/', projectsController.post)
